@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth text-base">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Calendar</title>
+
+    <style type="text/tailwindcss">
+      @import "tailwindcss";
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+      /* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"); */
+      @theme {
+        --font-roboto: "Roboto";
+        --color-master-dark: #577bcb;
+        --color-master-light: #d2e0ff;
+      }
+
+      .active {
+        @apply bg-master-dark text-white rounded-xl;
+      }
+      ::selection {
+        background-color: var(--color-master-light);
+        color: var(--color-master-dark);
+      }
+    </style>
+  </head>
+  <body class="font-roboto">
+    <header class="w-full sticky top-0 z-1000">
+      <div
+        class="w-full flex flex-row justify-center md:justify-between items-center bg-white px-12 py-0">
+        <div class="logo">
+          <a href="/"
+            ><img src="/Images/Calendar-Logo.png" alt="Calendar Logo"
+          /></a>
+        </div>
+        <div class="nav-top-links hidden md:block">
+          <ul
+            class="list-none flex flex-row justify-between items-center gap-13">
+            <li>
+              <a
+                class="text-black font-bold no-underline hover:text-master-dark transition-colors duration-200 ease-in"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-black font-bold no-underline hover:text-master-dark transition-colors duration-200 ease-in"
+                href="#about"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-black font-bold no-underline hover:text-master-dark transition-colors duration-200 ease-in"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section
+      id="home"
+      class="py-12.5 px-0 bg-[#f2f2f2] w-full min-h-screen flex flex-col justify-center items-center gap-2.5">
+      <div class="flex flex-col justify-center items-center gap-4 max-w-[90%]">
+        <h1
+          class="text-xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-bold my-5 mx-auto">
+          Welcome to Calendar!
+        </h1>
+
+        <p class="text-xs md:text-lg text-center max-w-150">
+          Your one-stop solution for all your calendar needs. Stay organized and
+          never miss an important date again with our user-friendly calendar
+          application.
+        </p>
+        <a
+          href="#contact"
+          class="py-2.5 transition-all px-5 text-base bg-master-dark hover:bg-[#0056b3] hover:shadow-lg active:bg-[#054e9b] text-white rounded-md border-0 cursor-pointer">
+          Get Started
+        </a>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="py-12.5 px-0 w-full min-h-screen flex flex-col justify-center items-center gap-2.5">
+      <div class="pb-5">
+        <h1 class="text-4xl md:text-7xl font-bold">About</h1>
+      </div>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center gap-5 container p-4 md:p-0">
+        <div
+          class="flex flex-col justify-center items-center gap-2 hover:-translate-y-2.5 transition-transform duration-200 ease-in-out p-2.5 bg-gray-100 shadow-lg rounded-md md:w-75 w-full cursor-pointer">
+          <img
+            class="w-full h-auto rounded-xl mt-2.5"
+            src="/Images/boy.webp"
+            alt="Boy Image" />
+          <h2 class="text-2xl mb-5 font-bold">About Us</h2>
+
+          <p class="text-base text-center mb-7.5 max-w-150 text-[#333333]">
+            We are a team of passionate developers dedicated to creating the
+            best calendar application for you.
+          </p>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center gap-2 hover:-translate-y-2.5 transition-transform duration-200 ease-in-out p-2.5 bg-gray-100 shadow-lg rounded-md md:w-75 w-full cursor-pointer">
+          <img
+            class="w-full h-auto rounded-xl mt-2.5"
+            src="/Images/boy.webp"
+            alt="Boy Image" />
+          <h2 class="text-2xl mb-2.5 font-bold">About Us</h2>
+          <p class="text-base text-center mb-7.5 max-w-150 text-[#333333]">
+            We are a team of passionate developers dedicated to creating the
+            best calendar application for you.
+          </p>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center gap-2 hover:-translate-y-2.5 transition-transform duration-200 ease-in-out p-2.5 bg-gray-100 shadow-lg rounded-md sm:w-75 w-full cursor-pointer">
+          <img
+            class="w-full h-auto rounded-xl mt-2.5"
+            src="/Images/boy.webp"
+            alt="Boy Image" />
+          <h2 class="text-2xl mb-2.5 font-bold">About Us</h2>
+          <p class="text-base text-center mb-7.5 max-w-150 text-[#333333]">
+            We are a team of passionate developers dedicated to creating the
+            best calendar application for you.
+          </p>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center gap-2 hover:-translate-y-2.5 transition-transform duration-200 ease-in-out p-2.5 bg-gray-100 shadow-lg rounded-md md:w-75 w-full cursor-pointer">
+          <img
+            class="w-full h-auto rounded-xl mt-2.5"
+            src="/Images/boy.webp"
+            alt="Boy Image" />
+          <h2 class="text-2xl mb-2.5 font-bold">About Us</h2>
+          <p class="text-base text-center mb-7.5 max-w-150 text-[#333333]">
+            We are a team of passionate developers dedicated to creating the
+            best calendar application for you.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col justify-center items-center gap-2 hover:-translate-y-2.5 transition-transform duration-200 ease-in-out p-2.5 bg-gray-100 shadow-lg rounded-md md:w-75 w-full cursor-pointer">
+          <img
+            class="w-full h-auto rounded-xl mt-2.5"
+            src="/Images/boy.webp"
+            alt="Boy Image" />
+          <h2 class="text-2xl mb-2.5 font-bold">About Us</h2>
+          <p class="text-base text-center mb-7.5 max-w-150 text-[#333333]">
+            We are a team of passionate developers dedicated to creating the
+            best calendar application for you.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col justify-center items-center gap-2 hover:-translate-y-2.5 transition-transform duration-200 ease-in-out p-2.5 bg-gray-100 shadow-lg rounded-md md:w-75 w-full cursor-pointer">
+          <img
+            class="w-full h-auto rounded-xl mt-2.5"
+            src="/Images/boy.webp"
+            alt="Boy Image" />
+          <h2 class="text-2xl mb-2.5 font-bold">About Us</h2>
+          <p class="text-base text-center mb-7.5 max-w-150 text-[#333333]">
+            We are a team of passionate developers dedicated to creating the
+            best calendar application for you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="py-20 px-0 bg-[#f2f2f2] w-full min-h-screen flex flex-col justify-center items-center gap-2.5">
+      <div
+        class="flex flex-col justify-center items-center gap-5 bg-white p-7.5 max-w-[90%] md:w-200 rounded-md">
+        <h2 class="text-[28px] font-bold">Contact Us</h2>
+        <p class="text-lg mb-7.5 max-w-150 text-[#333333] text-center">
+          If you have any questions or feedback, feel free to reach out to us!
+        </p>
+        <form class="flex flex-col gap-4 w-full">
+          <div class="flex flex-col gap-1">
+            <label for="name">Full Name:</label>
+            <input
+              class="p-2.5 text-base rounded-md border border-solid border-[#ccc] focus:outline-none focus:ring-2 focus:ring-blue-500"
+              id="name"
+              type="text"
+              placeholder="Your Name"
+              required />
+          </div>
+          <div class="flex flex-col gap-1">
+            <label for="email">Email:</label>
+            <input
+              class="p-2.5 text-base rounded-md border border-solid border-[#ccc] focus:outline-none focus:ring-2 focus:ring-blue-500"
+              id="email"
+              type="email"
+              placeholder="Your Email"
+              required />
+          </div>
+          <div class="flex flex-col gap-1">
+            <label for="message">Message:</label>
+            <textarea
+              class="p-2.5 h-25 resize-none text-base rounded-md border border-solid border-[#ccc] focus:outline-none focus:ring-2 focus:ring-blue-500"
+              id="message"
+              placeholder="Your Message"
+              required></textarea>
+          </div>
+
+          <button
+            class="py-2.5 px-5 text-base bg-master-dark hover:bg-[#0056b3] active:bg-[#054e9b] transition-colors duration-200 ease-in text-white rounded-md border-0 cursor-pointer"
+            type="submit">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="flex justify-center items-center bg-white p-0">
+      <div class="flex flex-col justify-center items-center w-75">
+        <img
+          class="w-fit h-auto"
+          src="/Images/Calendar-Logo.png"
+          alt="Calendar Logo" />
+        <ul
+          class="flex flex-row justify-between items-center gap-2.5 list-none">
+          <li>
+            <a class="text-black underline text-xs" href="#">Facebook</a>
+          </li>
+          <li>
+            <a class="text-black underline text-xs" href="#">Twitter</a>
+          </li>
+          <li>
+            <a class="text-black underline text-xs" href="#">Instagram</a>
+          </li>
+        </ul>
+        <p class="text-xs text-[#333] text-center">
+          Calendar &copy; 2026 . All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <div class="md:hidden w-full sticky bottom-0 p-3 bg-white/70">
+      <ul
+        id="itemsList"
+        class="list-none flex flex-row justify-around items-center w-full">
+        <li>
+          <a
+            class="active p-2 text-master-dark no-underline transition-all duration-200 ease-in"
+            href="#home">
+            <i class="fa-solid fa-house"></i>
+            <span class="sr-only">Home</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="p-2 text-master-dark no-underline transition-all duration-200 ease-in"
+            href="#about">
+            <i class="fa-regular fa-folder-open"></i>
+            <span class="sr-only">About</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="p-2 text-master-dark no-underline transition-all duration-200 ease-in"
+            href="#contact">
+            <i class="fa-solid fa-phone"></i>
+            <span class="sr-only"> Contact </span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      const allItems = document.querySelectorAll("#itemsList li a");
+
+      allItems.forEach((item) => {
+        item.addEventListener("click", function () {
+          allItems.forEach((li) => li.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
