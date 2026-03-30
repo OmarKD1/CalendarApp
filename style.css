@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-roboto: "Roboto";
+  --font-roboto: "Roboto", sans-serif;
   --color-master-dark: #4e6fb6;
   --color-master-light: #d2e0ff;
 
@@ -13,4 +13,13 @@
 ::selection {
   background-color: var(--color-master-light);
   color: var(--color-master-dark);
+}
+
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-VariableFont_wdth,wght.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
 }
