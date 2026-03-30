@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-roboto: "Roboto";
+  --color-master-dark: #4e6fb6;
+  --color-master-light: #d2e0ff;
+}
+
+.bottom-nav-active {
+  @apply bg-master-dark text-white rounded-xl;
+}
+::selection {
+  background-color: var(--color-master-light);
+  color: var(--color-master-dark);
+}
